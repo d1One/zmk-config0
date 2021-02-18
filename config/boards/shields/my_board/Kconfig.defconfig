@@ -18,7 +18,7 @@ config SSD1306
 	default y
 
 config SSD1306_REVERSE_MODE
-	default n
+	default y
 
 endif # ZMK_DISPLAY
 
@@ -34,7 +34,7 @@ config LVGL_VDB_SIZE
 	default 64
 
 config LVGL_DPI
-	default 116
+	default 148
 
 config LVGL_BITS_PER_PIXEL
 	default 1
@@ -44,3 +44,5 @@ choice LVGL_COLOR_DEPTH
 endchoice
 
 endif # LVGL
+
+endif
