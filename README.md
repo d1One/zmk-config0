@@ -1,6 +1,6 @@
 
 ![alt text](https://github.com/d1One/zmk-config0/blob/main/Screen%20Shot%202021-02-23%20at%2023.26.29.png?raw=true)
-
+```javascript
   ESC     1        2       3       4       5       6       7       8       9      0      MINUS    EQUAL     BSPC      DEL
 RC(2,0) RC(1,0) RC(0,0) RC(1,1) RC(0,1) RC(1,2) RC(0,2) RC(1,3) RC(0,3) RC(1,4) RC(0,4) RC(0,5)  RC(1,6)   RC(0,6)   RC(0,7)
 &kp ESC &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0 &kp MINUS &kp EQUAL &kp BSPC  &kp DEL
@@ -19,4 +19,4 @@ RC(5,0)  RC(7,0) RC(6,1) RC(5,1) RC(8,2) RC(7,2) RC(6,3) RC(8,4) RC(7,4) RC(6,4)
 
  LCTRL      LALT    LCMD         SPACE      OPT       CMD       FN      LEFT      DOWN     RIGHT
 RC(8,0)   RC(8,1)   RC(7,1)     RC(8,3)   RC(8,5)   RC(7,5)   RC(8,6)   RC(7,6)  RC(8,7)   RC(7,7)
-&kp LCTRL  &kp LALT  &kp LCMD   &kp SPACE  &kp RCMD &kp RCTRL &kp N7  &kp LEFT  &kp DOWN  &kp RIGHT
+&kp LCTRL  &kp LALT  &kp LCMD   &kp SPACE  &kp RCMD &kp RCTRL &kp N7  &kp LEFT  &kp DOWN  &kp RIGHT```
