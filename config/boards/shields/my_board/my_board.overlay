@@ -17,6 +17,17 @@
 		label = "KSCAN";
 
 		diode-direction = "col2row";
+		
+        col-gpios
+            = <&gpio0 31 GPIO_ACTIVE_HIGH>
+            , <&gpio0 29 GPIO_ACTIVE_HIGH>
+            , <&gpio0 2 GPIO_ACTIVE_HIGH>
+            , <&gpio1 15 GPIO_ACTIVE_HIGH>
+            , <&gpio1 13 GPIO_ACTIVE_HIGH>
+            , <&gpio1 11 GPIO_ACTIVE_HIGH>
+            , <&gpio0 10 GPIO_ACTIVE_HIGH>
+            , <&gpio0 9 GPIO_ACTIVE_HIGH>
+            ;
 
          row-gpios
             = <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -30,16 +41,6 @@
             , <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
 
-        col-gpios
-            = <&gpio0 31 GPIO_ACTIVE_HIGH>
-            , <&gpio0 29 GPIO_ACTIVE_HIGH>
-            , <&gpio0 2 GPIO_ACTIVE_HIGH>
-            , <&gpio1 15 GPIO_ACTIVE_HIGH>
-            , <&gpio1 13 GPIO_ACTIVE_HIGH>
-            , <&gpio1 11 GPIO_ACTIVE_HIGH>
-            , <&gpio0 10 GPIO_ACTIVE_HIGH>
-            , <&gpio0 9 GPIO_ACTIVE_HIGH>
-            ;
     };
 	default_transform: keymap_transform_0 {
 		compatible = "zmk,matrix-transform";
