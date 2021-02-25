@@ -1,7 +1,8 @@
-/*
- *
- *
- *     8x9
+/* 
+ * config/boards/shields/my_board/My_board.keymap
+ * 
+ * This is where the default keymap is stored, it is overwritten by config/my_board.my_board.keycap
+ * 
  */
 
 #include <behaviors.dtsi>
@@ -13,13 +14,15 @@
         compatible = "zmk,keymap";
 
         default_layer {
-// ------------------------ 71 Keys - ISO Layout with US Legends (Mostly) -------------------------
-// ------------------------------------------------------------------------------------------------
-// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   | DEL |
-// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |  ENTER  | PRT |
-// | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |  x  |________| pUP |
-// |SHIFT|  x  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  <  |  >  |  ?  |   SHIFT   | ↑  | pDN |
-// | CTL | WIN | ALT |                   SPACE                 | ALT | WIN | FN1 |  ←  | ↓  |  ➞  |
+// --------------------------- 71 Keys - ISO Layout with US Legends (Mostly) ----------------------------
+// ------------------------------------------------------------------------------------------------------
+//       | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   | DEL |
+// | ENC | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |  ENTER  | PRT |
+// | ENC | CAPS  |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |  x  |________| pUP |
+//       |SHIFT|  x  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  <  |  >  |  ?  |   SHIFT   | ↑  | pDN |
+//       | CTL | WIN | ALT |                   SPACE                 | ALT | WIN | FN1 |  ←  | ↓  |  ➞  |
+// ------------------------------------------------------------------------------------------------------
+
             bindings = <
 &kp ESC   &kp N1   &kp N2   &kp N3    &kp N4   &kp N5    &kp N6 &kp N7   &kp N8   &kp N9    &kp N0  &kp MINUS &kp EQUAL &kp BSPC  &kp DEL
 &kp N1    &kp TAB  &kp Q    &kp W     &kp E    &kp R     &kp T  &kp Y    &kp U    &kp I     &kp O   &kp P     &kp LBKT  &kp RBKT  &kp ENTER  &kp PSCRN
@@ -31,6 +34,7 @@
 
         };
 
+/* fn layer not configured yet, atm it's just a duplicate of the above */
         fn_layer {
             bindings = <
 &kp ESC   &kp N1   &kp N2   &kp N3    &kp N4   &kp N5    &kp N6 &kp N7   &kp N8   &kp N9    &kp N0  &kp MINUS &kp EQUAL &kp BSPC  &kp DEL
