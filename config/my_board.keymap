@@ -1,7 +1,5 @@
 /*
- *
- *
- *     8x9
+ * Custom Keymap, overwrites config/boards/shields/my_board/My_board.keymap
  */
 
 #include <behaviors.dtsi>
